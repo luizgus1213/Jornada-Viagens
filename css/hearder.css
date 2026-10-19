@@ -1,3 +1,18 @@
 header {
   background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 38px 48px;
+}
+.imagem_bussola_branca {
+  display: inline-block;
+  margin: 37px 0 0 48px;
+}
+nav {
+  display: none;
+}
+.menu_navegacao {
+  margin-top: 60px;
 }
