@@ -5,17 +5,45 @@ header {
   flex-direction: row;
   align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
 }
 .imagem_bussola_branca {
   display: inline-block;
   margin: 37px 0 0 48px;
 }
+
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
 }
+
 nav {
   display: none;
 }
+
 .menu_navegacao {
   margin-top: 60px;
+}
+
+.list-links li {
+  color: var(--text-secondary-color);
+  margin: 20px 0;
+}
+
+.list-links {
+  list-style: none;
+  color: var(--text-secondary-color);
+  padding: 20px;
+}
+.list-links li a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--menu-text-weight);
+  font-size: 16px;
 }
