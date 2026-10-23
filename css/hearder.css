@@ -8,11 +8,16 @@ header {
   position: relative;
 }
 
-.imagem_bussola_branca {
+.logo {
   display: inline-block;
   margin: 0 0 0 48px; /* Removido os 37px do topo para não desalinhar */
 }
-
+.img-mobile {
+  display: block;
+}
+.img-desktop {
+  display: none;
+}
 input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
@@ -47,7 +52,7 @@ nav {
   color: var(--text-secondary-color);
   font-family: "Montserrat", sans-serif;
   font-weight: var(--menu-text-weight);
-  font-size: 24px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,10 +68,39 @@ nav {
     align-items: center;
     padding: 0;
   }
+  .menu_navegacao a {
+    padding: 40px;
+  }
+
   .menu_navegacao nav {
     display: block;
   }
   .menu_navegacao li {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+  .img-desktop {
+    display: block;
+    width: 260px;
+    height: 64px;
+  }
+  .img-mobile {
+    display: none;
+  }
+  .menu_navegacao a:hover {
+    color: var(--primary-color);
+  }
+}
+@media screen and (min-width: 1940px) {
+  header {
+    padding: 38px 160px;
   }
 }
