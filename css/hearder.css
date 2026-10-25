@@ -35,6 +35,11 @@ nav {
 .menu_navegacao {
   margin-top: 60px;
 }
+.menu_hamburguer {
+  position: relative;
+  top: -22px;
+  right: 0px;
+}
 
 .list-links li {
   color: var(--text-secondary-color);
@@ -91,12 +96,18 @@ nav {
     display: block;
     width: 260px;
     height: 64px;
+    position: absolute;
+    left: 48px;
   }
   .img-mobile {
     display: none;
   }
   .menu_navegacao a:hover {
     color: var(--primary-color);
+  }
+  .menu_navegacao li a {
+    font-size: 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 1940px) {
