@@ -28,5 +28,23 @@
 .card header span {
   font-size: 32px;
   display: inline-block;
+  font-weight: var(--title-weight);
+
   margin-top: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+  .card header h3 {
+    font-size: 48px;
+  }
+  .card header span {
+    font-size: 40px;
+  }
+  .card footer {
+    display: flex;
+    justify-content: center;
+  }
 }
