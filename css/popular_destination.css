@@ -1,3 +1,10 @@
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
 .destinations .item header {
   display: block;
   background-color: transparent;
@@ -5,4 +12,122 @@
   text-align: center;
   padding: 0;
   margin-bottom: 24px;
+}
+.img-item-toyko {
+  background-image: url(../img/tokyo-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 312px;
+  height: 360px;
+  position: relative;
+
+  left: 24px;
+  position: static;
+  margin: 0 auto;
+}
+.img-item-osaka {
+  background-image: url(../img/Osaka-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 312px;
+  height: 360px;
+  position: relative;
+
+  left: 24px;
+  position: static;
+  margin: 0 auto;
+}
+.centralizar-text-destino {
+  padding: 0 24px;
+}
+h4 {
+  font-size: 28px;
+  display: flex;
+  justify-content: flex-start;
+}
+.destinos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 312px;
+  border-radius: 8px;
+  position: static;
+  margin: 24px auto 0;
+}
+@media screen and (min-width: 768px) {
+  .img-item-toyko {
+    background-image: url(../img/tokyo-tablet-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 648px;
+
+    height: 452px;
+    position: relative;
+
+    left: 24px;
+    position: static;
+    margin: 0 auto;
+  }
+  .img-item-osaka {
+    background-image: url(../img/Osaka-tablet-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 648px;
+
+    height: 452px;
+    position: relative;
+
+    left: 24px;
+    position: static;
+    margin: 0 auto;
+  }
+  .destinos {
+    width: 280px;
+  }
+  .centralizar-text-destino footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .centralizar-text-destino {
+    padding: 0 60px;
+  }
+  .destinos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: auto;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img-item-osaka,
+  .img-item-toyko {
+    max-width: 588px;
+    width: 100%;
+    height: 452px;
+    position: static;
+  }
+
+  .destination-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  .destination-items .item {
+    flex: 1;
+    max-width: 588px;
+  }
 }
