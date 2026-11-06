@@ -20,7 +20,15 @@
   --text-weight: 400;
   --menu-text-weight: 500;
 }
-
+.content_title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+.content_text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
 /* Reset CSS */
 body,
 img,
