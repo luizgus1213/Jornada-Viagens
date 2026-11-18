@@ -1,0 +1,21 @@
+.final-page-pacotes .final-img {
+  background-image: url(../../img/imagem-tres-japonesas-mobile.png);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .final-page-pacotes .final-img {
+    background-image: url(../../img/imagem-tres-japonesas-tablet.png);
+    height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .final-page-pacotes .final-img {
+    background-image: url(../../img/imagem-tres-japonesas-desk.png);
+    height: 600px;
+    width: 100%;
+  }
+}
