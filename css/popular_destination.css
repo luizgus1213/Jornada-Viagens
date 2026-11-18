@@ -1,3 +1,6 @@
+.destinations .section-title h2 {
+  margin-top: 88px;
+}
 .destination-items {
   display: flex;
   flex-direction: column;

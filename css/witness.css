@@ -31,6 +31,9 @@
   color: var(--secondary-color);
   font-size: 45px;
 }
+.profile-content {
+  padding: 0 0 0 2px;
+}
 @media screen and (min-width: 1440px) {
   .testimonial-container {
     flex-direction: row;

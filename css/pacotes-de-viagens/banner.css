@@ -1,0 +1,56 @@
+.banner-japao .img-hero {
+  background-image: url(../../img/banner-japao-tablet.png);
+  width: 100%;
+  height: 460px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.banner-japao .img-hero .text {
+  height: 330px;
+  width: 80%;
+  align-items: center;
+  padding: 64px 24px;
+}
+.banner-japao .img-hero .text h1 {
+  color: var(--text-secondary-color);
+}
+.banner-japao .text hr {
+  height: 4px;
+  width: 180px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px auto;
+  position: absolute;
+  align-items: start;
+}
+.banner-japao .img-hero .text h2 {
+  margin-top: 32px;
+  color: var(--text-secondary-color);
+  font-size: 20px;
+  font-weight: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-japao .img-hero {
+    height: 620px;
+  }
+  .banner-japao .img-hero .text {
+    height: 303px;
+    width: 579px;
+    padding: 210px 69px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner-japao .img-hero .text {
+    height: 280px;
+    padding: 210px 69px;
+  }
+  .banner-japao .img-hero {
+    background-position: 60%;
+    height: 620px;
+    background-image: url(../../img/banner-japao-desktop.png);
+  }
+}
