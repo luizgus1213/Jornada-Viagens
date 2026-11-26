@@ -1,0 +1,142 @@
+/* BANNER */
+
+.banner-blog .img-hero {
+  background-image: url(../../img/hero-blog-mobile.png);
+}
+
+/* TOKYO */
+
+.tokyo {
+  width: 100%;
+  margin: 0 auto;
+}
+.description {
+  padding: 0 28px;
+}
+/* TÍTULO */
+
+.tokyo .titulo-destino h2 {
+  margin-top: 88px;
+  text-align: center;
+}
+
+.tokyo .titulo-destino hr {
+  margin-bottom: 32px;
+}
+
+/* CHEGADA */
+
+.separacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 12px;
+}
+
+.chegada-acomodacao {
+  min-width: 0;
+}
+
+/* IMAGENS */
+
+.imagem {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.acomodacao {
+  width: 312px;
+  max-width: 100%;
+  aspect-ratio: 312 / 360;
+  background-image: url(../../img/acomodacao-tokyo-mobile.png);
+}
+
+/* ACOMODAÇÃO */
+
+.acomodacao-texto {
+  margin-top: 16px;
+}
+
+/* VISTA DA JANELA */
+
+.vista-janela-tokyo {
+  width: 100%;
+  aspect-ratio: 2.15;
+  background-image: url(../../img/vista-janela-toyko-mobile.png);
+  margin-top: 16px;
+}
+
+.tokyo sub {
+  display: block;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* EXPLORANDO A CIDADE */
+
+.explorando {
+  margin-top: 24px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .banner-blog .img-hero {
+    background-image: url(../../img/hero-blog-tablet.png);
+  }
+
+  .separacao {
+    grid-template-columns: repeat(2, 312px);
+    grid-template-rows: 360px;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+
+  .chegada-acomodacao {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .acomodacao {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 312px;
+    height: 360px;
+    background-image: url(../../img/acomodacao-tokyo-tablet.png);
+  }
+
+  .vista-janela-tokyo {
+    background-image: url(../../img/vista-janela-toyko-tablet.png);
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 1024px) {
+  .separacao {
+    display: grid;
+    grid-template-columns: repeat(2, 548px);
+    grid-template-rows: 360px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .chegada-acomodacao {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .acomodacao {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .banner-blog .img-hero {
+    background-image: url(../../img/hero-blog-desk.png);
+    background-position: 60%;
+  }
+
+  .acomodacao {
+    background-image: url(../../img/acomodacao-tokyo-desk.png);
+    width: 100%;
+  }
+
+  .vista-janela-tokyo {
+    background-image: url(../../img/vista-janela-toyko-desk.png);
+  }
+}

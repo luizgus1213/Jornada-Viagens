@@ -4,6 +4,9 @@
   font-style: normal;
   font-display: swap;
 }
+.description {
+  padding: 0px 24px;
+}
 
 :root {
   --primary-color: #8f0101;
@@ -47,7 +50,7 @@ button {
 }
 body {
   font-family: "Montserrat";
-  color: var("--text-primary-color");
+  color: var(--text-primary-color);
 }
 .section-title h2 {
   font-size: 28px;
