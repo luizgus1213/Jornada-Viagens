@@ -1,5 +1,6 @@
 .banner-japao .img-hero,
-.banner-blog .img-hero {
+.banner-blog .img-hero,
+.banner-contato .img-hero {
   width: 100%;
   height: 460px;
   background-size: cover;
@@ -12,7 +13,8 @@
   background-image: url(../../img/banner-japao-tablet.png);
 }
 .banner-japao .img-hero .text,
-.banner-blog .img-hero .text {
+.banner-blog .img-hero .text,
+.banner-contato .img-hero .text {
   height: 330px;
   width: 80%;
   align-items: center;
@@ -20,12 +22,14 @@
 }
 
 .banner-japao .img-hero .text h1,
-.banner-blog .img-hero .text h1 {
+.banner-blog .img-hero .text h1,
+.banner-contato .img-hero h1 {
   color: var(--text-secondary-color);
 }
 
 .banner-japao .text hr,
-.banner-blog .text hr {
+.banner-blog .text hr,
+.banner-contato .text hr {
   height: 4px;
   width: 180px;
   background-color: var(--secondary-color);
@@ -36,7 +40,8 @@
 }
 
 .banner-japao .img-hero .text h2,
-.banner-blog .img-hero .text h2 {
+.banner-blog .img-hero .text h2,
+.banner-contato .img-hero .text h2 {
   margin-top: 32px;
   color: var(--text-secondary-color);
   font-size: 20px;
@@ -50,12 +55,14 @@
     background-image: url(../../img/banner-japao-tablet.png);
   }
   .banner-japao .img-hero,
-  .banner-blog .img-hero {
+  .banner-blog .img-hero,
+  .banner-contato .img-hero {
     height: 620px;
   }
 
   .banner-japao .img-hero .text,
-  .banner-blog .img-hero .text {
+  .banner-blog .img-hero .text,
+  .banner-contato .img-hero .text {
     height: 303px;
     width: 579px;
     padding: 210px 69px;
@@ -64,7 +71,7 @@
 
 @media screen and (min-width: 1024px) {
   .banner-japao .img-hero .text,
-  .banner-blog .img-hero .text {
+  .banner-blog .img-hero .text .banner-contato .img-hero .text {
     height: 280px;
     padding: 210px 69px;
   }
