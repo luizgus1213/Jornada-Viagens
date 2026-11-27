@@ -1,0 +1,118 @@
+.banner-contato .img-hero {
+  background-image: url(../../img/hero-mobile-contato.png);
+}
+.imagem-final {
+  background-image: url(../../img/imagem-vista-ao-banco-mobile.png);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .imagem-final {
+    background-image: url(../../img/imagem-vista-ao-banco-tablet.png);
+    height: 600px;
+  }
+  .banner-contato .img-hero {
+    background-image: url(../../img/hero-tablet-contato.png);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imagem-final {
+    background-image: url(../../img/imagem-vista-ao-banco-desk.png);
+  }
+  .banner-contato .img-hero {
+    background-image: url(../../img/hero-desk-contato.png);
+  }
+}
+
+.form {
+  padding: 0 24px 64px;
+}
+
+.form .section-title h2 {
+  margin-top: 48px;
+}
+
+.form .section-title .content_text {
+  max-width: 800px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto 0;
+}
+
+.campo-contato {
+  width: 100%;
+}
+
+.campo-contato label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.campo-contato input,
+.campo-contato textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
+  background: transparent;
+  outline: none;
+}
+
+.campo-contato input {
+  height: 42px;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  border-radius: 0;
+  padding: 8px 0;
+}
+
+.campo-contato textarea {
+  min-height: 110px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.campo-contato input::placeholder,
+.campo-contato textarea::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.campo-contato input:focus {
+  border-bottom-color: var(--secondary-color);
+}
+
+.campo-contato textarea:focus {
+  border-color: var(--secondary-color);
+}
+
+.formulario-contato .button {
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

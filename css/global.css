@@ -4,6 +4,9 @@
   font-style: normal;
   font-display: swap;
 }
+.description {
+  padding: 0px 24px;
+}
 
 :root {
   --primary-color: #8f0101;
@@ -20,7 +23,15 @@
   --text-weight: 400;
   --menu-text-weight: 500;
 }
-
+.content_title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+.content_text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
 /* Reset CSS */
 body,
 img,
@@ -36,4 +47,51 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  color: var(--text-primary-color);
+}
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0px;
+  text-align: center;
+  margin-top: 88px;
+}
+.button {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  display: inline-block;
+  text-align: center;
+  line-height: 64px;
+  text-decoration: none;
+}
+
+.section-title hr {
+  height: 4px;
+  width: 180px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px auto;
+}
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--primary-color);
+  }
 }

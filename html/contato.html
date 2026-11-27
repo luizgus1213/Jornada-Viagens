@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornada Viagens</title>
+    <link rel="icon" href="../favicon-branco.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="blog.html" title="Voltar para página inicial">
+        <img
+          class="img-mobile"
+          src="../img/Símbolo_branco.png"
+          alt="Símbolo branco da logo Jornada"
+        />
+
+        <img
+          class="img-desktop"
+          src="../img/Logo-branco 2.png"
+          alt="Logo branca da Jornada"
+        />
+      </a>
+
+      <div class="menu_navegacao">
+        <label for="menu">
+          <img
+            src="../img/menu.png"
+            alt="Menu hambúrguer"
+            class="menu_hamburguer"
+          />
+        </label>
+
+        <input type="checkbox" id="menu" hidden />
+
+        <nav>
+          <ul class="list-links">
+            <li>
+              <a href="blog.html" title="Acessar página Blog">Blog</a>
+            </li>
+
+            <li>
+              <a
+                href="pacotes-de-viagens.html"
+                title="Acessar página de viagens"
+                >Pacotes de Viagem</a
+              >
+            </li>
+
+            <li class="pagina-selecionada">
+              <a href="contato.html" title="Acessar contatos">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="banner-contato">
+      <div class="img-hero">
+        <section class="section-title">
+          <div class="text">
+            <h1 class="content_title">Entre em contato!</h1>
+
+            <hr />
+
+            <h2 class="content_text">
+              Dúvidas, sugestões, problemas para resolver? Temos uma equipe de
+              plantão para ajudar você!
+            </h2>
+          </div>
+        </section>
+      </div>
+
+      <section class="form">
+        <div class="section-title">
+          <h2>Preencha o formulário:</h2>
+          <hr />
+
+          <p class="content_text">
+            Temos uma equipe sempre em prontidão para resolver suas dúvidas,
+            problemas, trazer dicas e orientações objetivas para tornar sua
+            experiência o mais prazerosa e tranquila possível. Preencha seus
+            dados que vamos retornar seu contato conforme a urgência do seu
+            chamado. Pode confiar!
+          </p>
+        </div>
+
+        <form class="formulario-contato">
+          <div class="campo-contato">
+            <label for="nome">Seu nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="campo-contato">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Telefone"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <div class="campo-contato">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="campo-contato">
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              placeholder="Assunto"
+              required
+            />
+          </div>
+
+          <div class="campo-contato">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Mensagem"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="button">Enviar!</button>
+        </form>
+      </section>
+      <div class="imagem-final"></div>
+
+      <section class="final-page final-page-pacotes">
+        <footer>
+          <div class="dados-finais">
+            <header>
+              <img
+                src="../img/Logo-branco-jornada.png"
+                alt="Logo da jornada de viagens "
+              />
+            </header>
+            <h1>Horário de atendimento: 08h - 20h (Segunda a Sábado)</h1>
+            <div class="developer">
+              <h1>Desenvolvido por Luiz Gustavo sem fins comerciais.</h1>
+            </div>
+          </div>
+
+          <div class="links-redes">
+            <h1>Acesse nossas redes:</h1>
+            <a
+              href="https://wa.me/553199255745"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="icones-redes-sociais"
+                src="../img/Whatsapp 1 (1).png"
+                alt="Ícone do WhatsApp"
+              /> </a
+            ><a href="../html/instagram.html"
+              ><img
+                class="icones-redes-sociais"
+                src="../img/Instragam 1 (1).png"
+                alt="icone do instagram" /></a
+            ><a href="../html/twitter.html"
+              ><img
+                class="icones-redes-sociais"
+                src="../img/Twiter 1 (1).png"
+                alt="icone do twiter"
+            /></a>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script src="../js/contato.js" defer></script>
+  </body>
+</html>

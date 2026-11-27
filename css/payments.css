@@ -1,0 +1,120 @@
+.payments_grid img.tablet,
+.payments_grid img.desktop {
+  display: none;
+}
+
+.payments_grid img.mobile {
+  display: block;
+}
+
+.payments .section-title h2 {
+  margin-top: 88px;
+}
+
+.payments {
+  .content_title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 24px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .content_text {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.payments_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 144px);
+  grid-template-rows: auto 254px auto;
+  gap: 24px;
+  justify-content: center;
+}
+
+.payments_grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content_title {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.bag {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.passaport {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.people {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+@media screen and (min-width: 768px) {
+  .payments_grid img.mobile,
+  .payments_grid img.desktop {
+    display: none;
+  }
+
+  .payments_grid img.tablet {
+    display: block;
+  }
+
+  .payments_grid {
+    grid-template-columns: repeat(2, 312px);
+    grid-template-rows: auto 254px 182px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payments_grid img.mobile,
+  .payments_grid img.tablet {
+    display: none;
+  }
+
+  .payments_grid img.desktop {
+    display: block;
+  }
+
+  .payments_grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1.1fr);
+    grid-template-rows: 254px 182px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+
+  .payments .content_title {
+    justify-items: start;
+    align-items: start;
+    align-self: center;
+  }
+
+  .payments h3,
+  .payments .content_text {
+    text-align: left;
+  }
+
+  .content_title {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .bag {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .passaport {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .people {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+}

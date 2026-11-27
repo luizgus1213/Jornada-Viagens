@@ -6,6 +6,7 @@ header {
   align-items: center; /* Alterado de flex-start para center para alinhar tudo ao meio */
   padding: 38px 48px;
   position: relative;
+  width: auto;
 }
 
 .logo {
@@ -62,6 +63,7 @@ nav {
 
 @media screen and (min-width: 768px) {
   .menu_navegacao {
+    width: 100%;
     margin-top: 0;
   }
   .menu_navegacao label {

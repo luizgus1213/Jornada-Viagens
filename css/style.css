@@ -1,3 +1,17 @@
 @import url(global.css);
 @import url(hearder.css);
 @import url(hero.css);
+@import url(offers.css);
+@import url(categories.css);
+@import url(popular_destination.css);
+@import url(payments.css);
+@import url(witness.css);
+@import url(final-page.css);
+@import url(pacotes-de-viagens/header.css);
+@import url(pacotes-de-viagens/banner.css);
+@import url(pacotes-de-viagens/payment.css);
+@import url(pacotes-de-viagens/depoimentos.css);
+@import url(pacotes-de-viagens/final-page.css);
+@import url(blog-page/blog.css);
+@import url(blog-page/posts.css);
+@import url(contato/contato.css);
